@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Паспорт</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./stylesheets/passport.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">angel's calling</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="series.html">Серийность</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="passport.html">Паспорт</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript.html">Задача</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Информация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="review.html">Обратная связь</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html ">Магазин</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="passport-container text-center">
+        <img src="./images/fon.jpg" alt="Паспорт РФ" class="img-fluid" />
+
+        <img
+          id="photo"
+          src="./images/toro2.jpg"
+          alt="Фото"
+          title="Это фотография"
+          class="img-fluid"
+        />
+
+        <img
+          id="podpis"
+          src="./images/podpis.png"
+          alt="Подпись"
+          class="img-fluid"
+        />
+
+        <div class="text" id="issued">ГУ МВД ПО Г. МОСКВЕ</div>
+        <div class="text" id="surname">ТОЛСТОВА</div>
+        <div class="text" id="name">МАРИЯ</div>
+        <div class="text" id="father">ИГОРЕВНА</div>
+        <div class="text" id="gender">Жен.</div>
+        <div class="text" id="birthplace">гор. Москва</div>
+        <div class="text" id="code">500-000</div>
+        <div class="text" id="date">07.06.2023</div>
+        <div class="text" id="datebirth">07.06.2003</div>
+      </div>
+
+      <div class="button-container text-center mt-4">
+        <button id="translateButton" class="btn btn-primary btn-lg">
+          Поменять
+        </button>
+      </div>
+    </main>
+
+    <a href="index.html" class="btn btn-primary back-to-top">К началу</a>
+
+    <footer>
+      <p style="color: #ffffff; font-style: italic">&copy; 2024 marmur</p>
+    </footer>
+    <script src="./javascripts/passport.js"></script>
+  </body>
+</html>

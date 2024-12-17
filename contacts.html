@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добавить информацию</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/contacts.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">angel's calling</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="series.html">Серийность</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="passport.html">Паспорт</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript.html">Задача</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html">Информация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="review.html">Обратная связь</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Магазин</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="form-container">
+        <h2 style="color: #ffffff">
+          Форма для добавления информации про других персонажей
+        </h2>
+        <form
+          id="uForm"
+          action="https://dokodemo.fandom.com/wiki/Doko_Demo_Issyo_Wiki"
+          method="POST"
+        >
+          <label for="username" style="color: #ffffff">Ваше имя:</label>
+          <input type="text" id="username" name="username" /><br /><br />
+
+          <label for="person" style="color: #ffffff">Имя персонажа:</label>
+          <input type="text" id="person" name="person" /><br /><br />
+
+          <label for="game" style="color: #ffffff"
+            >Его принадлежность (название игры, компании и т.д.):</label
+          >
+          <input type="text" id="game" name="game" /><br /><br />
+
+          <label for="genre-select" style="color: #ffffff"
+            >Выберите определение:</label
+          >
+          <select id="genre-select" name="genre">
+            <option value="ambient">Маскот</option>
+            <option value="blues">Персонаж игры</option>
+            <option value="classical">Рекламный персонаж</option>
+            <option value="country">Персонаж новеллы</option>
+            <option value="dance">Персонаж аниме</option>
+            <option value="easy-listening">Персонаж фильма</option>
+            <option value="electronic">Персонаж мультфильма</option>
+            <option value="experimental">Персонаж сериала</option></select
+          ><br /><br />
+
+          <label for="listened" style="color: #ffffff"
+            >Вы сможете рассказать подробнее об этом персонаже? Если да,
+            оставьте свою электронную почту</label
+          ><br />
+          <input type="radio" id="listened_yes" name="listened" value="yes" />
+          <label for="listened_yes" style="color: #ffffff">Да</label><br />
+          <input type="radio" id="listened_no" name="listened" value="no" />
+          <label for="listened_no" style="color: #ffffff">Нет</label
+          ><br /><br />
+
+          <label for="emmail" style="color: #ffffff">Электронная почта:</label>
+          <input type="text" id="emmail" name="emmail" /><br /><br />
+
+          <label for="suggest_date" style="color: #ffffff"
+            >Когда предложили:</label
+          >
+          <input
+            type="date"
+            id="suggest_date"
+            name="suggest_date"
+          /><br /><br />
+
+          <label for="password" style="color: #ffffff"
+            >Название вашей заявки:</label
+          >
+          <input type="password" id="password" name="password" /><br /><br />
+
+          <input
+            type="submit"
+            value="Предложить"
+            class="btn btn-primary btn-block"
+          />
+        </form>
+      </section>
+    </main>
+
+    <a href="index.html" class="btn btn-primary back-to-top">К началу</a>
+
+    <footer>
+      <p style="color: #ffffff; font-style: italic">&copy; 2024 marmur</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

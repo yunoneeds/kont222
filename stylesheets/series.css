@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./images/toroback.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0;
+}
+
+header, nav, footer{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 50px; 
+    text-decoration: none;
+    color: white;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.back-to-top {
+    display: block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(255, 0, 187);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.custom-table {
+    width: 600px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+    background-color: #3e3d43; 
+    background-image: url("background-image.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-table td {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+.first-row {
+    height: 100px;
+}
+
+.image-cell {
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.image-container img {
+    height: 50px;
+    align-self: flex-end;
+    position: relative;
+    top: -25px; 
+}
+
+.image-container p {
+    margin: 0;
+}
+
+.small-image {
+    max-width: 200px; 
+    max-height: 200px; 
+    width: auto; 
+    height: auto;
+}
+
+.second-row {
+    height: 20px;
+}
+
+.merged-cell {
+    height: 20px;
+}
+
+.large-cell {
+    width: 400px;
+    height: 300px;
+}
+
+.green-cell {
+    background-color: rgb(255, 4, 222);
+}
+
+.nested-table-cell {
+    width: 50%;
+}
+
+.nested-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nested-table td {
+    border: 1px solid #ffffff;
+    padding: 0;
+}
+
+.nested-image-cell {
+    padding: 20px;
+}
+
+.nested-image-cell img {
+    width: 100%;
+    height: auto;
+}
+
+.image-right-cell {
+    padding: 15px;
+    text-align: right;
+}
+
+.image-right-cell img {
+    width: 100%;
+    height: auto;
+}

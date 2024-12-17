@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(32, 32, 33); 
+}
+
+header, nav, footer{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 50px; 
+    text-decoration: none;
+    color: white;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.logo{
+    margin-right: 0px;
+    margin-left: 1100px;
+    position: absolute;
+}
+
+.back-to-top {
+    display: block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(255, 0, 187);
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.button{
+    color: #ffffff;
+}
+
+.toro-section{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery img {
+    width: 100px; 
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%; 
+    max-width: 800px;
+}
+
+#caption {
+    margin: 15px auto;
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
